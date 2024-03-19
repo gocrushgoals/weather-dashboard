@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Fetch data //
     function fetchWeather() {
-        const weatherUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${cityInputField.value}&appid=${apiKey}`
+        const weatherUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityInputField.value}&appid=${apiKey}`
         
         fetch(weatherUrl).then(function (response) {
             if(response.ok) {
