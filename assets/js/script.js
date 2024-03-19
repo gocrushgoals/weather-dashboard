@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Fetch data //
     function fetchWeather() {
-        const weatherUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${cityInputField.value}&appid=43b296f553a355f680eceeff3a42c5f4`
+        const weatherUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${cityInputField.value}&appid=${apiKey}`
         
         fetch(weatherUrl).then(function (response) {
             if(response.ok) {
@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Display current weather conditions for the city with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed
     // Display future weather conditions for the city with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
     
-                    let humidityElement = document.createElement("p")
-                    humidityElement.textContent = data.list[i].main.humidity +"%" 
-                    document.querySelector(".current-container").append(humidityElement)
+                    let tempElement = document.createElement("p")
+                    tempElement.textContent = data.list[i].main.temp +"°F" 
+                    document.querySelector(".current-container").append(tempElement)
                     }
                 })
             }
