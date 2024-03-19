@@ -35,9 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // add event listener for search //
         // On click, the city is added to the search history
         searchForm.addEventListener("click", fetchWeather);
- 
-       
-
 
 
     // WHEN I click on a city in the search history
