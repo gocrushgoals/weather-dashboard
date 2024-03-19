@@ -5,6 +5,8 @@
 This project uses a server-side API to retrieve weather data for cities. The application is deployed to GitHub Pages.
 
 ## Screenshot
+![image](https://github.com/gocrushgoals/weather-dashboard/assets/157322992/6cf36277-68c9-4f78-8160-fbc10daa0e0a)
+
 
 ## Installation
 
