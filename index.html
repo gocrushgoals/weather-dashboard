@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./assets/css/style.css">
+</head>
+    <body>
+        <!-- Main container for Webpage Content -->
+        <div class="container mt-5">
+            <h1 class="text-center mb-4">Weather Dashboard</h1>
+            
+            <!-- Weather Search form by city -->
+            <form id="search-form" class="col-md-3">
+                <label for="city-input">Search for a City:</label>
+                <div class="input-group">
+                    <input type="text" id="city-input" class="form-control" placeholder="Enter city name" required>
+                    <button id="btnGet" type="button" class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </form>
+            
+            <div id="search-history"></div>
+                <!-- list of prior searched cities -->
+                <ul id="city-results" class="list-group mt-4"></ul>
+                <!-- clear storage button -->
+                <a id="clear-storage" href="#"></a>    
+            </div>
+
+            Current weather display
+            <!-- Replaced Code layout <div id="current-weather" class="mb-4 container"> -->
+                <!-- Display current weather data here -->
+                <div id="content-right current-weather" class="col-md-9 pt-4 current-container">
+                    <!-- Current weather displayed on top -->
+                    <div id="current-weather" class="border rounded"></div>
+                    <!-- Five day forecast below the current weather -->
+                    <div id="five-day-forecast" class="mt-5"></div>
+                </div>
+            </div>
+            
+            <!-- Future weather display -->
+            <div id="future-weather">
+                <!-- Display future weather data here -->
+            </div>
+            
+            <!-- Search history -->
+            <div id="search-history" class="mt-4">
+                <h3>Search History</h3>
+                <ul id="history-list" class="list-group">
+                    <!-- Display search history items here -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Your custom JavaScript -->
+        <script src="./assets/js/script.js"></script>"
+
+    </body>
+</html>

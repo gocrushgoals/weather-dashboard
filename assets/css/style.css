@@ -1,0 +1,83 @@
+/* Centering */
+.text-center {
+    text-align: center;
+}
+
+/* Margin for containers */
+.container {
+    margin-top: 50px;
+}
+
+/* Form styles */
+#search-form {
+    margin-bottom: 20px;
+}
+
+/* City Search width */
+.search-city{
+    width:80%;
+    flex-wrap: wrap;
+}
+
+/* Current and future weather display */
+.current-container,
+.future-weather {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Weather card styles */
+.weather-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.weather-card img {
+    width: 50px;
+}
+
+/* fontawesome magnifying glass icon */
+#search-button-icon{
+    width:15px;
+    display:inline-block;
+}
+
+/* Search history styles */
+#search-history {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* List item styles */
+#history-list .list-group-item {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+#history-list .list-group-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Media queries */
+@media only screen and (max-width: 992px) {
+    #search-city{
+        width:100%;
+    }
+    #search-button{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 575px) {
+
+    #fiveDayForecastUl{
+        justify-content: center;
+    }
+}
